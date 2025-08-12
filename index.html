@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para a Minha Esposa 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffccd9, #ff99cc); /* Rosa suave */
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      color: #ff3366;
+      text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.7);
+    }
+
+    p {
+      font-size: 20px;
+      color: #8a1d47;
+      line-height: 1.6;
+      text-align: justify;
+      margin-top: 20px;
+      max-width: 600px;
+    }
+
+    .btn {
+      padding: 18px 40px;
+      background-color: #ff66b2;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 99, 132, 0.6);
+      transition: all 0.3s ease;
+      margin-top: 30px;
+    }
+
+    .btn:hover {
+      background-color: #ff3385;
+      transform: scale(1.1);
+    }
+
+    /* Estilo para a página de surpresa */
+    .surprise-page {
+      display: none;
+      text-align: center;
+      padding: 50px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .surprise-page img {
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    .surprise-page h2 {
+      font-size: 28px;
+      color: #ff3366;
+      margin-bottom: 20px;
+    }
+
+    .surprise-page p {
+      font-size: 22px;
+      color: #8a1d47;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .btn-back {
+      padding: 12px 25px;
+      background-color: #ff66b2;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 99, 132, 0.6);
+      margin-top: 20px;
+    }
+
+    .btn-back:hover {
+      background-color: #ff3385;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Página Inicial -->
+  <div id="homePage">
+    <h1>Para a Minha Esposa 💖</h1>
+    <p>
+      Minha amada esposa, você é o meu tudo. Eu te amo mais do que as palavras podem expressar. 
+      Você é minha companheira, minha melhor amiga, e a mulher mais incrível do mundo. 💕
+      Sou imensamente grato por cada dia ao seu lado, por tudo o que você faz e pelo amor que me dá.
+    </p>
+    <button class="btn" onclick="goToSurprisePage()">Clique para sua Surpresa</button>
+  </div>
+
+  <!-- Página de Surpresa -->
+  <div class="surprise-page" id="surprisePage">
+    <h2>Mensagem Especial para Você, Minha Esposa 💘</h2>
+    <img src="https://via.placeholder.com/800x400/ff99cc/ffffff?text=Te+Amo+Minha+Esposa" alt="Imagem de amor" />
+    <p>
+      Você é o meu tudo, minha razão de viver e meu maior tesouro. Cada momento com você é único e inesquecível.
+      Sou eternamente grato por você estar ao meu lado, por ser a mãe dos nossos filhos, por me apoiar em todos os momentos. 🌟
+    </p>
+    <p>
+      Você é o meu alicerce, minha motivação, e a pessoa que eu mais amo neste mundo. Não existe nada mais importante para mim do que você.
+      Te amo para sempre e sempre vou estar ao seu lado, não importa o que aconteça. 💖
+    </p>
+    <button class="btn-back" onclick="goBackToHome()">Voltar para a Página Inicial</button>
+  </div>
+
+  <!-- JavaScript para navegação -->
+  <script>
+    // Função para mostrar a página de surpresa
+    function goToSurprisePage() {
+      document.getElementById('homePage').style.display = 'none';
+      document.getElementById('surprisePage').style.display = 'block';
+    }
+
+    // Função para voltar para a página inicial
+    function goBackToHome() {
+      document.getElementById('surprisePage').style.display = 'none';
+      document.getElementById('homePage').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
